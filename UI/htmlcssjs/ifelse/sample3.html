@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal If-Else Demo</title>
+    <style>
+        /* CSS CONDITIONAL: Pseudo-class (State-based if-else) */
+        body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s;
+            padding: 20px;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #4CAF50; /* IF hovered, change color */
+            color: white;
+        }
+
+        /* CSS CONDITIONAL: Media Query (Screen-size based if-else) */
+        @media (max-width: 600px) {
+            body {
+                background-color: #f0f0f0; /* IF screen is small, change background */
+            }
+            input { width: 80%; }
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .result-box {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: left;
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .highlight { font-weight: bold; color: blue; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Age Logic Portal</h1>
+        <p>Enter your age to see all conditional types in action:</p>
+        
+        <input type="number" id="ageInput" placeholder="Enter Age">
+        <button onclick="runAllLogic()">Check All Logic</button>
+
+        <div id="output" class="result-box">
+            Results will appear here...
+        </div>
+    </div>
+
+    <script>
+        function runAllLogic() {
+            const age = parseInt(document.getElementById('ageInput').value);
+            const output = document.getElementById('output');
+            
+            // 1. Simple IF (Validation)
+            if (isNaN(age)) {
+                output.innerHTML = "Please enter a valid number!";
+                return;
+            }
+
+            let results = "<h3>JavaScript Logic Results:</h3>";
+
+            // 2. IF...ELSE (Binary condition)
+            if (age >= 18) {
+                results += "<p><b>If-Else:</b> You are an Adult.</p>";
+            } else {
+                results += "<p><b>If-Else:</b> You are a Minor.</p>";
+            }
+
+            // 3. IF...ELSE IF...ELSE (Multiple conditions)
+            if (age < 13) {
+                results += "<p><b>Else-If Chain:</b> You are a Child.</p>";
+            } else if (age < 20) {
+                results += "<p><b>Else-If Chain:</b> You are a Teenager.</p>";
+            } else if (age < 65) {
+                results += "<p><b>Else-If Chain:</b> You are an Adult.</p>";
+            } else {
+                results += "<p><b>Else-If Chain:</b> You are a Senior Citizen.</p>";
+            }
+
+            // 4. TERNARY OPERATOR (Shorthand If-Else)
+            // Syntax: condition ? true : false
+            let canVote = (age >= 18) ? "Yes" : "No";
+            results += `<p><b>Ternary:</b> Can Vote? <span class="highlight">${canVote}</span></p>`;
+
+            // 5. SWITCH STATEMENT (Fixed value comparison)
+            let lifeStage;
+            switch (true) {
+                case (age <= 2):
+                    lifeStage = "Infant";
+                    break;
+                case (age > 2 && age <= 12):
+                    lifeStage = "Kid";
+                    break;
+                case (age >= 100):
+                    lifeStage = "Centenarian";
+                    break;
+                default:
+                    lifeStage = "Standard Age Group";
+            }
+            results += `<p><b>Switch:</b> Category: <span class="highlight">${lifeStage}</span></p>`;
+
+            // Update the UI
+            output.innerHTML = results;
+        }
+    </script>
+
+</body>
+</html>

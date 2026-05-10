@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: separate; /* Required for border-radius */
+            border-spacing: 0;
+            border: 1px solid black;
+            border-radius: 16px;
+            background-color: #E5E5E5; /* Light greyish tone */
+            /* Uncomment the line below to use an image background */
+            /* background-image: url('path_to_your_image.jpg'); */
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* Styling for rows */
+        tr {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>List of Products for Sale</h3>
+
+    <table>
+        <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Discount</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Adidas Alphabounce</td>
+            <td>5000</td>
+            <td>60% Off</td>
+            <td><a href="#">Add to Cart</a></td>
+        </tr>
+        <tr style="height: 100px;">
+            <td>102</td>
+            <td>Samsung OLED TV</td>
+            <td>50000</td>
+            <td>40% Off</td>
+            <td><a href="#">Add to Cart</a></td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>iPhone 11</td>
+            <td>60000</td>
+            <td>20% Off</td>
+            <td><a href="#">Add to Cart</a></td>
+        </tr>
+    </table>
+
+</body>
+</html>

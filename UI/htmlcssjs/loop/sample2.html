@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loop and Switch Example</title>
+</head>
+<body>
+  <h2>JavaScript Examples</h2>
+  <div id="output"></div>
+
+  <script>
+    const output = document.getElementById("output");
+
+    // Helper function to print lines
+    function print(text) {
+      output.innerHTML += text + "<br>";
+    }
+
+    print("<b>1) FOR LOOP</b>");
+    for (let i = 1; i <= 5; i++) {
+      print("For loop number: " + i);
+    }
+
+    print("<br><b>2) WHILE LOOP</b>");
+    let j = 1;
+    while (j <= 5) {
+      print("While loop number: " + j);
+      j++;
+    }
+
+    print("<br><b>3) DO...WHILE LOOP</b>");
+    let k = 1;
+    do {
+      print("Do while number: " + k);
+      k++;
+    } while (k <= 5);
+
+    print("<br><b>4) SWITCH EXAMPLE</b>");
+    let day = 3;
+    switch (day) {
+      case 1:
+        print("Day 1: Monday");
+        break;
+      case 2:
+        print("Day 2: Tuesday");
+        break;
+      case 3:
+        print("Day 3: Wednesday");
+        break;
+      case 4:
+        print("Day 4: Thursday");
+        break;
+      case 5:
+        print("Day 5: Friday");
+        break;
+      default:
+        print("Invalid day");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <script>
+        function add() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            
+            var sum = num1 + num2;
+            document.getElementById("result").textContent = sum;
+        }
+    </script>
+</head>
+<body>
+
+    <input type="number" id="num1" placeholder="Enter first number"> + 
+    <input type="number" id="num2" placeholder="Enter second number"> = 
+    <span id="result"></span>
+    
+    <br><br> <!-- Added a break for better layout -->
+    
+    <button onclick="add()">Add</button>
+
+</body>
+</html>

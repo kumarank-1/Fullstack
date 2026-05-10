@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript</h1>
+    <span id="result"></span>
+</body>
+<script>
+    // let arr =[1,2,3,4,5];
+    // console.log(arr);
+    // for (let i = 0; i < arr.length; i++) {
+    //     const element = arr[i];
+    //     document.getElementById("result").textContent = element;
+    // }
+
+    // let person ={
+    //     firstname :'jhon',
+    //     lastname :'Doe'
+    // };
+    // console.log(person.firstname);
+    // console.log(person.lastname);
+    // console.log(person["firstname"] + " " +person["lastname"]);
+    // person.age= 21
+    // console.log(person.age);
+
+    const person ={
+        name : "bob",
+        age : 30,
+        greet : function(){
+            console.log("heu greet")
+        },
+        getInfo : function(){
+            console.log("hey greet info")
+        }
+    }
+
+    person.greet();
+    person.getInfo();
+</script>
+</html>

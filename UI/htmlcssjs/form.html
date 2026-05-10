@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <form onsubmit="return validate()">
+            <h2>Registration Form</h2>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            
+            <label for="college_name">College Name:</label>
+            <input type="text" id="college_name" name="college_name">
+            <br><br>
+            
+            <button type="submit">Save</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+</body>
+<script>
+    function validate() {
+        const name = document.getElementById('name').value.trim();
+        const password = document.getElementById('password').value;
+        const email = document.getElementById('email').value.trim();
+        const college = document.getElementById('college_name').value.trim();
+
+        if (name === "") {
+            alert("Please enter your name.");
+            return false;
+        }
+
+        if (password.length < 6) {
+            alert("Password must be at least 6 characters long.");
+            return false;
+        }
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            return false;
+        }
+
+        if (college === "") {
+            alert("Please enter your college name.");
+            return false;
+        }
+
+        alert("Form submitted successfully!");
+        return true;
+    }
+
+</script>
+
+</html>

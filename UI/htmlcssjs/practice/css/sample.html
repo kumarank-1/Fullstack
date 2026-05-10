@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .login-container {
+            padding: 16px;
+            background-color: #e5e5e5;
+            border-radius: 12px;
+            width: 300px;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            display: inline;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <form action="" method="POST">
+        <h3>Welcome, Please Login</h3>
+        <b>User Name</b>
+        <input type="text" name="txtUserName" placeholder="john@example.com" required>
+        
+        <b>Password</b>
+        <input type="password" name="txtPassword" placeholder="minimum 6 characters" required>
+        
+        <input type="submit" value="LOGIN">
+    </form>
+</div>
+
+</body>
+</html>
