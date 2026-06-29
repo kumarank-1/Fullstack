@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Participant | Funfit</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="app-shell">
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a class="brand" href="index.html">
+                <img src="assets/funfit-mark.svg" alt="">
+                <span>Funfit</span>
+            </a>
+            <nav class="nav" aria-label="Primary">
+                <a href="batches">Batches</a>
+                <a href="participants">Participants</a>
+                <a href="add-batch.html">Add Batch</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="page-heading">
+            <div>
+                <h1>Add Participant</h1>
+                <p class="subtitle">Register a participant and assign them to a batch.</p>
+            </div>
+        </div>
+
+        <form class="form-panel" action="participants" method="post">
+            <div class="form-grid">
+                <div class="field">
+                    <label for="fullName">Full Name</label>
+                    <input id="fullName" name="fullName" type="text" maxlength="120" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" maxlength="120" required>
+                </div>
+                <div class="field">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" maxlength="20" required>
+                </div>
+                <div class="field">
+                    <label for="age">Age</label>
+                    <input id="age" name="age" type="number" min="1" max="120" required>
+                </div>
+                <div class="field">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select gender</option>
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                        <option value="Other">Other</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="batchId">Batch Id</label>
+                    <input id="batchId" name="batchId" type="number" min="1" required>
+                </div>
+                <div class="field">
+                    <label for="joinedDate">Joined Date</label>
+                    <input id="joinedDate" name="joinedDate" type="date" required>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button class="primary" type="submit">Save Participant</button>
+                <a class="button" href="participants">Cancel</a>
+            </div>
+        </form>
+</main>
+</div>
+<script src="assets/forms.js"></script>
+</body>
+</html>

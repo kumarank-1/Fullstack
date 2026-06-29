@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Batch | Funfit</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="app-shell">
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a class="brand" href="index.html">
+                <img src="assets/funfit-mark.svg" alt="">
+                <span>Funfit</span>
+            </a>
+            <nav class="nav" aria-label="Primary">
+                <a href="batches">Batches</a>
+                <a href="participants">Participants</a>
+                <a href="add-batch.html">Add Batch</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="page-heading">
+            <div>
+                <h1>Update Batch</h1>
+                <p class="subtitle">Enter the batch id and the new batch details.</p>
+            </div>
+        </div>
+
+        <form class="form-panel" action="batches" method="post">
+            <input type="hidden" name="_method" value="PUT">
+            <div class="form-grid">
+                <div class="field">
+                    <label for="id">Batch Id</label>
+                    <input id="id" name="id" type="number" min="1" required>
+                </div>
+                <div class="field">
+                    <label for="batchName">Batch Name</label>
+                    <input id="batchName" name="batchName" type="text" maxlength="100" required>
+                </div>
+                <div class="field">
+                    <label for="timeSlot">Time Slot</label>
+                    <select id="timeSlot" name="timeSlot" required>
+                        <option value="">Select slot</option>
+                        <option value="Morning">Morning</option>
+                        <option value="Evening">Evening</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="instructorName">Instructor</label>
+                    <input id="instructorName" name="instructorName" type="text" maxlength="100" value="Yamin" required>
+                </div>
+                <div class="field">
+                    <label for="capacity">Capacity</label>
+                    <input id="capacity" name="capacity" type="number" min="1" required>
+                </div>
+                <div class="field">
+                    <label for="startTime">Start Time</label>
+                    <input id="startTime" name="startTime" type="time" required>
+                </div>
+                <div class="field">
+                    <label for="endTime">End Time</label>
+                    <input id="endTime" name="endTime" type="time" required>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button class="primary" type="submit">Update Batch</button>
+                <a class="button" href="batches">Cancel</a>
+            </div>
+        </form>
+    </main>
+</div>
+<script src="assets/forms.js"></script>
+</body>
+</html>

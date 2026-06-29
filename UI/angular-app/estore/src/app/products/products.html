@@ -1,0 +1,45 @@
+<h3>Add Products</h3>
+
+<div>
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <input type="number" formControlName="productId" placeholder="Product ID" />
+    <br /><br />
+
+    <input type="text" formControlName="name" placeholder="Product Name" />
+    <br /><br />
+
+    <input type="number" formControlName="price" placeholder="Price" />
+    <br /><br />
+
+    <input type="number" step="0.1" formControlName="rating" placeholder="Rating" />
+    <br /><br />
+
+    <select formControlName="category">
+      <option value="">Select Category</option>
+      <option *ngFor="let c of categories" [value]="c">{{ c }}</option>
+    </select>
+    <br /><br />
+
+    <button type="submit" [disabled]="productForm.invalid">Submit</button>
+    <button type="button" (click)="toggleView()">Toggle Product List</button>
+  </form>
+</div>
+
+<hr />
+
+<div *ngIf="showProducts; else hiddenBlock">
+  <p><strong>All Products</strong></p>
+  <div *ngFor="let p of products">
+    <h4>
+      ID: {{ p.productId }} |
+      Name: {{ p.name }} |
+      Price: {{ p.price }} |
+      Rating: {{ p.rating }} |
+      Category: {{ p.category }}
+    </h4>
+  </div>
+</div>
+
+<ng-template #hiddenBlock>
+  <p>Product list is hidden (ngIf = false).</p>
+</ng-template>

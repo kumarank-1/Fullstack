@@ -1,0 +1,255 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R /F2 10 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 4140 >>
+stream
+0.67 0.22 0.17 rg
+0.06 0.09 0.13 rg
+BT /F2 31 Tf 54 725 Td (Streamify) Tj ET
+0.19 0.25 0.30 rg
+BT /F2 15 Tf 54 687 Td (Movie Browsing and Search Application) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 655 Td (Streamify is a React movie application that allows users to browse movies and filter them by) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 640.5 Td (title, genre, and rating. The application demonstrates practical React development concepts) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 626 Td (including functional components, hooks, props, event handling, conditional rendering, list) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 611.5 Td (rendering, API integration with Axios, loading states, and graceful error handling.) Tj ET
+0.04 0.37 0.35 rg
+BT /F2 15 Tf 54 580 Td (Project Summary) Tj ET
+0.74 0.79 0.82 RG 54 565 m 558 565 l S
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 554 Td (- Project name: Streamify) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 540 Td (- Application type: Movie browsing and search app) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 526 Td (- Frontend library: React) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 512 Td (- Build tool: Vite) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 498 Td (- HTTP client: Axios) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 484 Td (- Movie data source: TMDb API when VITE_TMDB_API_KEY is configured, with a curated local fallback) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 72 470 Td (  collection) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 456 Td (- Primary users: People who want a quick way to discover and filter movies) Tj ET
+0.04 0.37 0.35 rg
+BT /F2 15 Tf 54 427 Td (Objective) Tj ET
+0.74 0.79 0.82 RG 54 412 m 558 412 l S
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 401 Td (The objective of this project is to build a simple and user-friendly movie app where users can) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 386.5 Td (search for films by title and narrow results using genre and rating filters. The app is) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 372 Td (designed to be clear, responsive, and reliable even when an external API is unavailable.) Tj ET
+0.04 0.37 0.35 rg
+BT /F2 15 Tf 54 340.5 Td (Key Features) Tj ET
+0.74 0.79 0.82 RG 54 325.5 m 558 325.5 l S
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 314.5 Td (- Browse a collection of movie cards with poster, title, release year, rating, genres, overview,) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 72 300.5 Td (  and runtime where available.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 286.5 Td (- Search movies instantly by typing a title into the search field.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 272.5 Td (- Filter movies by genre using a dropdown generated from the available movie data.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 258.5 Td (- Filter movies by minimum rating using a range input.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 244.5 Td (- Reset all active filters with a single button.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 230.5 Td (- Show a loading indicator while movie data is being fetched.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 216.5 Td (- Display friendly messages for API fallback, errors, empty results, and retry actions.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 202.5 Td (- Use responsive layout styles so the app works on desktop and mobile screens.) Tj ET
+0.04 0.37 0.35 rg
+BT /F2 15 Tf 54 173.5 Td (React Concepts Used) Tj ET
+0.74 0.79 0.82 RG 54 158.5 m 558 158.5 l S
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 147.5 Td (- Functional components are used for App, Header, SearchFilters, MovieGrid, MovieCard, and status) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 72 133.5 Td (  messages.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 119.5 Td (- useState manages movie data, loading state, errors, selected genre, search text, and selected) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 72 105.5 Td (  rating.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 91.5 Td (- useEffect loads movie data when the app first renders.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 77.5 Td (- useCallback keeps the movie-loading function stable when it is passed to retry logic.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R /F2 10 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 4902 >>
+stream
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 738 Td (- useMemo computes the available genre list and filtered movie results efficiently.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 724 Td (- Props pass data and event handlers from App into child components.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 710 Td (- Event handling is used in search input, select dropdown, rating slider, reset button, retry) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 72 696 Td (  button, and image error handling.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 682 Td (- Conditional rendering displays loading, notices, errors, empty state, poster fallback, and) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 72 668 Td (  runtime only when needed.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 654 Td (- List rendering is used for movie cards and genre tags.) Tj ET
+0.04 0.37 0.35 rg
+BT /F2 15 Tf 54 625 Td (API Integration) Tj ET
+0.74 0.79 0.82 RG 54 610 m 558 610 l S
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 599 Td (The application uses Axios in src/services/movieApi.js. If VITE_TMDB_API_KEY is present in the) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 584.5 Td (.env file, Streamify calls the TMDb discover movie endpoint and normalizes the API response) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 570 Td (into the format used by the UI. If no key is configured, or if the API request fails, the app) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 555.5 Td (loads public/movies.json as a curated fallback data source.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 530 Td (This fallback approach keeps the user experience stable. Instead of breaking the interface) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 515.5 Td (when there is a network issue or an invalid API response, the app continues to show usable) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 501 Td (movie data and displays a notice explaining that the curated collection is being shown.) Tj ET
+0.04 0.37 0.35 rg
+BT /F2 15 Tf 54 469.5 Td (Component Structure) Tj ET
+0.74 0.79 0.82 RG 54 454.5 m 558 454.5 l S
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 443.5 Td (- App.jsx: Main container that loads data, stores state, computes filters, and passes props to) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 72 429.5 Td (  child components.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 415.5 Td (- Header.jsx: Displays the application name, visible result count, total movie count, and active) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 72 401.5 Td (  data source.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 387.5 Td (- SearchFilters.jsx: Contains the search box, genre dropdown, rating slider, and reset button.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 373.5 Td (- MovieGrid.jsx: Renders the list of movies or an empty state when no movie matches the filters.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 359.5 Td (- MovieCard.jsx: Displays movie details and handles poster image fallback when an image cannot) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 72 345.5 Td (  load.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 331.5 Td (- StatusMessage.jsx: Provides reusable loading, notice, error, and retry UI.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 317.5 Td (- movieApi.js: Handles Axios requests, TMDb response normalization, fallback loading, and) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 72 303.5 Td (  user-friendly API notices.) Tj ET
+0.04 0.37 0.35 rg
+BT /F2 15 Tf 54 274.5 Td (State Management) Tj ET
+0.74 0.79 0.82 RG 54 259.5 m 558 259.5 l S
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 248.5 Td (The app keeps state management simple and local because the project scope is focused. The) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 234 Td (movie list, data source label, notice message, loading flag, error message, search term,) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 219.5 Td (selected genre, and minimum rating are all stored in App.jsx using the useState hook. Derived) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 205 Td (values such as the genre list and filtered results are calculated with useMemo.) Tj ET
+0.04 0.37 0.35 rg
+BT /F2 15 Tf 54 173.5 Td (User Experience) Tj ET
+0.74 0.79 0.82 RG 54 158.5 m 558 158.5 l S
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 147.5 Td (- The interface begins with the actual movie browsing tool rather than a landing page.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 133.5 Td (- The filter controls are placed at the top so users can quickly refine results.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 119.5 Td (- The result count updates as filters change, giving immediate feedback.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 105.5 Td (- The app avoids blank screens by showing loading, error, fallback, and empty-result states.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 91.5 Td (- Movie cards are compact and scannable, with key details visible at a glance.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 77.5 Td (- The layout adapts for smaller screens by stacking controls and cards cleanly.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 9 0 R /F2 10 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2219 >>
+stream
+0.04 0.37 0.35 rg
+BT /F2 15 Tf 54 738 Td (Setup and Run Steps) Tj ET
+0.74 0.79 0.82 RG 54 723 m 558 723 l S
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 712 Td (- Open the streamify project folder.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 698 Td (- Install dependencies with npm.cmd install on Windows PowerShell if npm is blocked by script) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 72 684 Td (  policy.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 670 Td (- Create a .env file and add VITE_TMDB_API_KEY=your_key to use TMDb.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 656 Td (- Start the development server with npm.cmd run dev.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 642 Td (- Open the local URL shown by Vite, normally http://127.0.0.1:5173/.) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.2 Tf 62 628 Td (- Build the production version with npm.cmd run build.) Tj ET
+0.04 0.37 0.35 rg
+BT /F2 15 Tf 54 599 Td (Error Handling) Tj ET
+0.74 0.79 0.82 RG 54 584 m 558 584 l S
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 573 Td (The app handles API problems gracefully. If TMDb returns an error status, if the request) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 558.5 Td (cannot reach the server, or if another request failure occurs, Streamify catches the error and) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 544 Td (loads local movie data instead. When a full data load fails, the user sees a clear error) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 529.5 Td (message and a retry button.) Tj ET
+0.04 0.37 0.35 rg
+BT /F2 15 Tf 54 498 Td (Conclusion) Tj ET
+0.74 0.79 0.82 RG 54 483 m 558 483 l S
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 472 Td (Streamify satisfies the project goal by providing a simple React movie app with title search,) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 457.5 Td (genre filtering, rating filtering, Axios API integration, loading feedback, and graceful API) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 443 Td (error handling. The project uses core React concepts in a clean component structure and) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 428.5 Td (remains easy to extend with additional features such as favorites, pagination, detailed movie) Tj ET
+0.10 0.13 0.16 rg
+BT /F1 10.5 Tf 54 414 Td (pages, or advanced sorting.) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+10 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000264 00000 n 
+0000004455 00000 n 
+0000004592 00000 n 
+0000009545 00000 n 
+0000009682 00000 n 
+0000011952 00000 n 
+0000012022 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R >>
+startxref
+12098
+%%EOF

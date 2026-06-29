@@ -1,0 +1,40 @@
+<h3>Customer Reactive Form</h3>
+
+<form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
+  <label>Customer ID:</label><br />
+  <input type="text" formControlName="customerId" />
+  <div *ngIf="submitted && customerForm.controls['customerId'].invalid" style="color:red;">
+    Customer ID is required
+  </div>
+  <br />
+
+  <label>Name:</label><br />
+  <input type="text" formControlName="name" />
+  <div *ngIf="submitted && customerForm.controls['name'].invalid" style="color:red;">
+    Name is required (min 3 chars)
+  </div>
+  <br />
+
+  <label>Email:</label><br />
+  <input type="email" formControlName="email" />
+  <div *ngIf="submitted && customerForm.controls['email'].invalid" style="color:red;">
+    Valid email is required
+  </div>
+  <br />
+
+  <label>Phone:</label><br />
+  <input type="text" formControlName="phone" />
+  <div *ngIf="submitted && customerForm.controls['phone'].invalid" style="color:red;">
+    Phone must be 10 digits
+  </div>
+  <br />
+
+  <label>City:</label><br />
+  <input type="text" formControlName="city" />
+  <div *ngIf="submitted && customerForm.controls['city'].invalid" style="color:red;">
+    City is required
+  </div>
+  <br /><br />
+
+  <button type="submit">Submit</button>
+</form>

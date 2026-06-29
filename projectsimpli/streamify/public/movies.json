@@ -1,0 +1,124 @@
+{
+  "movies": [
+    {
+      "id": "dune-part-two",
+      "title": "Dune: Part Two",
+      "releaseYear": 2024,
+      "rating": 8.5,
+      "runtime": 166,
+      "genres": ["Science Fiction", "Adventure", "Drama"],
+      "overview": "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
+      "poster": "https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"
+    },
+    {
+      "id": "oppenheimer",
+      "title": "Oppenheimer",
+      "releaseYear": 2023,
+      "rating": 8.1,
+      "runtime": 181,
+      "genres": ["Drama", "History"],
+      "overview": "The story of J. Robert Oppenheimer and the scientific race that changed the world.",
+      "poster": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"
+    },
+    {
+      "id": "spider-verse",
+      "title": "Spider-Man: Across the Spider-Verse",
+      "releaseYear": 2023,
+      "rating": 8.4,
+      "runtime": 140,
+      "genres": ["Animation", "Action", "Adventure"],
+      "overview": "Miles Morales crosses the multiverse and meets a team of Spider-People protecting its fragile balance.",
+      "poster": "https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg"
+    },
+    {
+      "id": "barbie",
+      "title": "Barbie",
+      "releaseYear": 2023,
+      "rating": 7.0,
+      "runtime": 114,
+      "genres": ["Comedy", "Adventure", "Fantasy"],
+      "overview": "Barbie leaves a perfect world for a bright, strange, and revealing trip through the real one.",
+      "poster": "https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg"
+    },
+    {
+      "id": "the-batman",
+      "title": "The Batman",
+      "releaseYear": 2022,
+      "rating": 7.7,
+      "runtime": 177,
+      "genres": ["Crime", "Mystery", "Action"],
+      "overview": "Batman investigates a trail of corruption and riddles as Gotham's elite become targets.",
+      "poster": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg"
+    },
+    {
+      "id": "everything-everywhere",
+      "title": "Everything Everywhere All at Once",
+      "releaseYear": 2022,
+      "rating": 7.8,
+      "runtime": 140,
+      "genres": ["Action", "Comedy", "Science Fiction"],
+      "overview": "A laundromat owner discovers she must connect with versions of herself across the multiverse.",
+      "poster": "https://image.tmdb.org/t/p/w500/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg"
+    },
+    {
+      "id": "top-gun-maverick",
+      "title": "Top Gun: Maverick",
+      "releaseYear": 2022,
+      "rating": 8.2,
+      "runtime": 131,
+      "genres": ["Action", "Drama"],
+      "overview": "Pete Mitchell trains a new generation of pilots for a dangerous mission that demands impossible precision.",
+      "poster": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg"
+    },
+    {
+      "id": "parasite",
+      "title": "Parasite",
+      "releaseYear": 2019,
+      "rating": 8.5,
+      "runtime": 133,
+      "genres": ["Drama", "Thriller", "Comedy"],
+      "overview": "A struggling family schemes its way into a wealthy household, revealing a sharp divide beneath polished surfaces.",
+      "poster": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+    },
+    {
+      "id": "interstellar",
+      "title": "Interstellar",
+      "releaseYear": 2014,
+      "rating": 8.7,
+      "runtime": 169,
+      "genres": ["Science Fiction", "Drama", "Adventure"],
+      "overview": "Explorers travel through a wormhole to find a new home for humanity as Earth begins to fail.",
+      "poster": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+    },
+    {
+      "id": "inception",
+      "title": "Inception",
+      "releaseYear": 2010,
+      "rating": 8.4,
+      "runtime": 148,
+      "genres": ["Science Fiction", "Action", "Thriller"],
+      "overview": "A skilled thief enters dreams to steal secrets and receives a chance at redemption through one final job.",
+      "poster": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+    },
+    {
+      "id": "the-dark-knight",
+      "title": "The Dark Knight",
+      "releaseYear": 2008,
+      "rating": 8.5,
+      "runtime": 152,
+      "genres": ["Action", "Crime", "Drama"],
+      "overview": "Batman faces the Joker, a criminal force determined to test Gotham's idea of order.",
+      "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+    },
+    {
+      "id": "spirited-away",
+      "title": "Spirited Away",
+      "releaseYear": 2001,
+      "rating": 8.5,
+      "runtime": 125,
+      "genres": ["Animation", "Fantasy", "Family"],
+      "overview": "A young girl enters a spirit world and must find courage, kindness, and a way back home.",
+      "poster": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg"
+    }
+  ]
+}

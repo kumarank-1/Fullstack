@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funfit</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="app-shell">
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a class="brand" href="index.html">
+                <img src="assets/funfit-mark.svg" alt="">
+                <span>Funfit</span>
+            </a>
+            <nav class="nav" aria-label="Primary">
+                <a href="batches">Batches</a>
+                <a href="participants">Participants</a>
+                <a href="add-batch.html">Add Batch</a>
+                <a href="add-participant.html">Add Participant</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="page-heading">
+            <div>
+                <h1>Funfit Console</h1>
+                <p class="subtitle">Manage Yamin's Zumba batches and participant records.</p>
+            </div>
+        </div>
+
+        <section class="dashboard-grid" aria-label="Funfit navigation">
+            <article class="tile">
+                <div>
+                    <strong>Batches</strong>
+                    <p>Create, view, update, and delete morning and evening Zumba batches.</p>
+                </div>
+                <div class="tile-actions">
+                    <a class="button primary" href="batches">View</a>
+                    <a class="button" href="add-batch.html">Add</a>
+                    <a class="button" href="update-batch.html">Update</a>
+                </div>
+            </article>
+
+            <article class="tile">
+                <div>
+                    <strong>Participants</strong>
+                    <p>Maintain participant details and assign members to a batch.</p>
+                </div>
+                <div class="tile-actions">
+                    <a class="button primary" href="participants">View</a>
+                    <a class="button" href="add-participant.html">Add</a>
+                    <a class="button" href="update-participant.html">Update</a>
+                </div>
+            </article>
+
+            <article class="tile">
+                <div>
+                    <strong>Batch Lookup</strong>
+                    <p>Filter participants by batch using the batch id query parameter.</p>
+                </div>
+                <form class="tile-actions" action="participants" method="get">
+                    <input type="number" name="batchId" min="1" placeholder="Batch id" required>
+                    <button class="primary" type="submit">Open</button>
+                </form>
+            </article>
+        </section>
+    </main>
+</div>
+</body>
+</html>
